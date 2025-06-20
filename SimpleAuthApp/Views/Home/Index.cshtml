@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Dashboard</h1>
+    <p>Hello @User.Identity.Name! You are successfully logged in.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">User Management</h5>
+                    <p class="card-text">View and manage all registered users.</p>
+                    <a href="@Url.Action("UserList", "Home")" class="btn btn-primary">View Users</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Account Settings</h5>
+                    <p class="card-text">Manage your account settings and preferences.</p>
+                    <a href="#" class="btn btn-secondary">Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
